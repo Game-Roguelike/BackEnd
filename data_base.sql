@@ -205,14 +205,14 @@ VALUES
 INSERT INTO Weapon (Weapon_id, Name, Sprite, type, Damage, Price, Effect_id)
 VALUES
 (1, 'Great Sword', 'assets/Sprites/Weapon/greatSword.png', 'Weapon', 5, 15, 7),
-(2, 'Bardiche', 'assets/Sprites/Weapon/Bardiche.png', 'Weapon', 7, 25, 10),
-(3, 'Estoc', 'assets/Sprites/Weapon/Estoc.png', 'Weapon', 8, 40, 15),
+(2, 'Ax', 'assets/Sprites/Weapon/ax.png', 'Weapon', 7, 25, 10),
+(3, 'Pirate Sword', 'assets/Sprites/Weapon/pirateSword.png', 'Weapon', 7, 30, 15),
 (4, 'Bolo Knife', 'assets/Sprites/Weapon/boloKnife.png', 'Weapon', 6, 20, 10),
-(5, 'Kunai', 'assets/Sprites/Weapon/Kunai.png', 'Weapon', 7, 30, 20),
-(6, 'Special Bow', 'assets/Sprites/Weapon/specialBow.png', 'Weapon', 7, 30, 25),
-(7, 'Bow', 'assets/Sprites/Weapon/Bow.png', 'Weapon', 4, 15, 2),
-(8, 'Flail', 'assets/Sprites/Weapon/Flail.png', 'Weapon', 6, 20, 20),
-(9, 'Magic Wand', 'assets/Sprites/Weapon/magicWand.png', 'Weapon', 9, 50, 50);
+(5, 'Long Sword', 'assets/Sprites/Weapon/longSword.png', 'Weapon', 8, 45, 30),
+(6, 'Special Bow', 'assets/Sprites/Weapon/specialBow.png', 'Weapon', 8, 40, 25),
+(7, 'Bow', 'assets/Sprites/Weapon/Bow.png', 'Weapon', 5, 15, 7),
+(8, 'Flail', 'assets/Sprites/Weapon/Flail.png', 'Weapon', 6, 20, 10),
+(9, 'Hammer', 'assets/Sprites/Weapon/Hammer.png', 'Weapon', 7, 30, 20);
 
 INSERT INTO Item_Usable (Item_id, Name, Sprite, Number_of_Units, Price, Effect_id)
 VALUES
@@ -224,3 +224,27 @@ VALUES
 (6, 'Dragons Blood', 'assets/Sprites/Usables/dragonsBlood.png', 3, 25, 25),
 (7, 'Medusa Tear', 'assets/Sprites/Usables/medusaTear.png', 1, 25, 2),
 (8, 'Power of the Dead', 'assets/Sprites/Usables/powerOfTheDead.png', 1, 50, 5);
+
+INSERT INTO Expoint (UniqueID, Level, Min_XP, Max_XP)
+VALUES
+(1, 1, 0, 6),
+(2, 2, 7, 14),
+(3, 3, 15, 22),
+(4, 4, 23, 31),
+(5, 5, 32, 40),
+(6, 6, 41, 54),
+(7, 7, 55, 66),
+(8, 8, 67, 79),
+(9, 9, 80, 94),
+(10, 10, 95, 114),
+(11, 11, 115, 132),
+(12, 12, 133, 152),
+(13, 13, 153, 175),
+(14, 14, 176, 200),
+(15, 15, 201, 229),
+(16, 16, 230, 265),
+(17, 17, 266, 292),
+(18, 18, 293, 320),
+(19, 19, 321, 360),
+(20, 20, 361, 400),
+(21, 21, 401, 999);
