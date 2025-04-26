@@ -1,60 +1,56 @@
 INSERT INTO EFFECT (EFFECT_ID, NAME, TYPE, HP, POWER, STAMINA, DAMAGE, INCOMING_DAMAGE)
 VALUES
 --Armor
-(1, 'Helmet Effect 1', 'Player', 10, 2, 2, 0.1, -0.1),
-(2, 'Helmet Effect 2', 'Player', 15, 5, 5, NULL, -0.2),
-(3, 'Helmet Effect 3', 'Player', 10, 10, 3, 0.6, NULL),
-(4, 'Helmet Effect 4', 'Player', 10, 2, 10, NULL, -0.5),
-(5, 'Helmet Effect 5', 'Player', 5, 4, 5, 0.5, NULL),
-(6, 'Body Effect 1', 'Player', 15, 3, 3, 0.1, -0.1),
-(7, 'Body Effect 2', 'Player', 20, 7, 7, NULL, -0.3),
-(8, 'Body Effect 3', 'Player', 3, 3, 5, 0.4, NULL),
-(9, 'Body Effect 4', 'Player', 15, 1, 15, NULL, -0.6),
-(10, 'Body Effect 5', 'Player', 8, 5, 8, 0.6, NULL),
-(11, 'Boots Effect 1', 'Player', 10, 2, 2, 0.2, -0.2),
-(12, 'Boots Effect 2', 'Player', 15, 5, 5, NULL, -0.3),
-(13, 'Boots Effect 3', 'Player', 10, 10, 3, 0.4, NULL),
-(14, 'Boots Effect 4', 'Player', 10, 2, 10, NULL, -0.3),
-(15, 'Boots Effect 5', 'Player', 5, 4, 5, 0.3, NULL),
-(16, 'Hands Effect 1', 'Player', 5, 1, 1, 0.05, -0.05),
-(17, 'Hands Effect 2', 'Player', 10, 7, 7, 0.1, NULL),
-(18, 'Hands Effect 3', 'Player', 5, 5, 1, NULL, -0.2),
-(19, 'Hands Effect 4', 'Player', 7, 2, 7, 0.1, NULL),
-(20, 'Hands Effect 5', 'Player', 5, 5, 5, NULL, -0.1),
---what is the experience and money? We don't have colums for that
-(21, 'Amulet Effect 1', 'Player', 0, 0, 0, NULL, NULL),
-(22, 'Amulet Effect 2', 'Player', 0, 0, 0, NULL, NULL),
-(23, 'Amulet Effect 3', 'Player', 0, 0, 0, NULL, NULL),
-(24, 'Amulet Effect 4', 'Player', 0, 0, 0, NULL, NULL),
-(25, 'Amulet Effect 5', 'Player', 0, 0, 0, NULL, NULL),
-(26, 'Amulet Effect 5', 'Player', 0, 0, 0, NULL, NULL),
-(27, 'Ring Effect 1', 'Player', 0, 0, 0, NULL, NULL),
-(28, 'Ring Effect 2', 'Player', 0, 0, 0, NULL, NULL),
-(29, 'Ring Effect 3', 'Player', 0, 0, 0, NULL, NULL),
-(30, 'Ring Effect 4', 'Player', 0, 0, 0, NULL, NULL),
-(31, 'Ring Effect 5', 'Player', 0, 0, 0, NULL, NULL),
-(32, 'Ring Effect 6', 'Player', 0, 0, 0, NULL, NULL),
+(1, 'Helmet Effect 1', 'Player', 10, NULL, NULL, 0.02, -0.02),
+(2, 'Helmet Effect 2', 'Player', 15, NULL, NULL, NULL, -0.05),
+(3, 'Helmet Effect 3', 'Player', NULL, NULL, 3, 0.1, NULL),
+(4, 'Helmet Effect 4', 'Player', NULL, 2, NULL, NULL, -0.1),
+(5, 'Helmet Effect 5', 'Player', NULL, 5, NULL, 0.05, NULL),
+(6, 'Body Effect 1', 'Player', 15, NULL, NULL, 0.03, -0.03),
+(7, 'Body Effect 2', 'Player', 20, NULL, NULL, NULL, -0.07),
+(8, 'Body Effect 3', 'Player', NULL, NULL, 5, 0.03, NULL),
+(9, 'Body Effect 4', 'Player', NULL, 1, NULL, NULL, -0.15),
+(10, 'Body Effect 5', 'Player', NULL, 5, NULL, 0.08, NULL),
+(11, 'Boots Effect 1', 'Player', 10, NULL, NULL, 0.02, -0.02),
+(12, 'Boots Effect 2', 'Player', 15, NULL, NULL, NULL, -0.05),
+(13, 'Boots Effect 3', 'Player', NULL, NULL, 3, 0.1, NULL),
+(14, 'Boots Effect 4', 'Player', NULL, 2, NULL, NULL, -0.1),
+(15, 'Boots Effect 5', 'Player', NULL, 4, NULL, 0.05, NULL),
+(16, 'Hands Effect 1', 'Player', 5, NULL, NULL, 0.01, -0.01),
+(17, 'Hands Effect 2', 'Player', 10, NULL, NULL, 0.07, NULL),
+(18, 'Hands Effect 3', 'Player', NULL, NULL, 1, NULL, -0.05),
+(19, 'Hands Effect 4', 'Player', NULL, 2, NULL, 0.07, NULL),
+(20, 'Hands Effect 5', 'Player', NULL, 5, NULL, NULL, -0.05),
+(21, 'Amulet Effect 1', 'Player', 10, NULL, NULL, NULL, -0.1),
+(22, 'Amulet Effect 2', 'Player', NULL, NULL, 2, 0.05, -0.05),
+(23, 'Amulet Effect 3', 'Player', 20, NULL, NULL, NULL, -0.15),
+(24, 'Amulet Effect 4', 'Player', NULL, 3, NULL, 0.05, NULL),
+(25, 'Amulet Effect 5', 'Player', NULL, 5, NULL, 0.1, NULL),
+(26, 'Amulet Effect 5', 'Player', NULL, 2, NULL, 0.07, NULL),
+(27, 'Ring Effect 1', 'Player', 5, NULL, NULL, NULL, -0.05),
+(28, 'Ring Effect 2', 'Player', NULL, NULL, 2, 0.01, -0.01),
+(29, 'Ring Effect 3', 'Player', NULL, NULL, 2, 0.02, -0.02),
+(30, 'Ring Effect 4', 'Player', NULL, 3, NULL, 0.05, NULL),
+(31, 'Ring Effect 5', 'Player', 10, NULL, NULL, NULL, -0.1),
+(32, 'Ring Effect 6', 'Player', NULL, 2, NULL, 0.05, NULL),
 --Weapon
---I think we don't need "Value for effect"
-(33, 'Weapon Effec 1', 'Player', 0, 5, 0, 0.2, NULL),
-(34, 'Weapon Effec 2', 'Player', 0, 7, 0, 0.25, NULL),
-(35, 'Weapon Effec 3', 'Player', 0, 7, 0, 0.3, NULL),
-(36, 'Weapon Effec 4', 'Player', 0, 6, 0, NULL, 0.05),
-(37, 'Weapon Effec 5', 'Player', 0, 8, 0, NULL, 0.1),
-(38, 'Weapon Effec 6', 'Player', 0, 8, 0, NULL, 0.15),
---what does mean "Deals damage X times"?
-(39, 'Weapon Effec 7', 'Player', 0, 5, 0, NULL, NULL),
-(40, 'Weapon Effec 8', 'Player', 0, 6, 0, NULL, NULL),
-(41, 'Weapon Effec 9', 'Player', 0, 7, 0, NULL, NULL),
+(33, 'Weapon Effect 1', 'Player', NULL, 5, NULL, 0.07, NULL),
+(34, 'Weapon Effect 2', 'Player', NULL, 7, NULL, 0.1, NULL),
+(35, 'Weapon Effect 3', 'Player', NULL, 7, NULL, 0.15, NULL),
+(36, 'Weapon Effect 4', 'Player', 0.1, 6, NULL, NULL, NULL),
+(37, 'Weapon Effect 5', 'Player', 0.3, 8, NULL, NULL, NULL),
+(38, 'Weapon Effect 6', 'Player', 0.25, 8, NULL, NULL, NULL),
+(39, 'Weapon Effect 7', 'Player', NULL, 35, NULL, NULL, NULL),
+(40, 'Weapon Effect 8', 'Player', NULL, 60, NULL, NULL, NULL),
+(41, 'Weapon Effect 9', 'Player', NULL, 140, NULL, NULL, NULL),
 --Iteam Usable
-(42, 'Poison Effect 1', 'Enemy', 0, 0, 0, -10, NULL),
-(43, 'Poison Effect 2', 'Enemy', 0, 0, 0, -15, NULL),
-(44, 'Poison Effect 3', 'Enemy', 0, 0, 0, -20, NULL),
-(45, 'Poison Effect 4', 'Player', 5, 0, 0, NULL, NULL),
-(46, 'Poison Effect 5', 'Player', 10, 0, 0, NULL, NULL),
-(47, 'Poison Effect 6', 'Player', 20, 0, 0, NULL, NULL),
-(48, 'Poison Effect 7', 'Player', 10, 10, 10, 0.1, 0.1),
-(49, 'Poison Effect 8', 'Player', 20, 20, 20, 0.2, 0.2);
+(42, 'Poison Effect 1', 'Enemy', NULL, NULL, NULL, -10, NULL),
+(43, 'Poison Effect 2', 'Enemy', NULL, NULL, NULL, -15, NULL),
+(44, 'Poison Effect 3', 'Enemy', NULL, NULL, NULL, -20, NULL),
+(45, 'Poison Effect 4', 'Player', 5, NULL, NULL, NULL, NULL),
+(46, 'Poison Effect 5', 'Player', 10, NULL, NULL, NULL, NULL),
+(47, 'Poison Effect 6', 'Player', 20, NULL, NULL, NULL, NULL);
+
 
 INSERT INTO EQUIPMENT (EQUIPMENT_ID, NAME, SPRITE, TYPE, EFFECT_ID, PRICE)
 VALUES
@@ -112,25 +108,63 @@ VALUES
 (3, 'The Forgotten Book', 'assets/Sprites/Usables/theForgottenBook.png', 3, 40, 44),
 (4, 'Cheese', 'assets/Sprites/Usables/cheese.png', 2, 10, 45),
 (5, 'Grandfathers Tincture', 'assets/Sprites/Usables/grandfathersTincture.png', 2, 20, 46),
-(6, 'Dragons Blood', 'assets/Sprites/Usables/dragonsBlood.png', 3, 25, 47),
-(7, 'Medusa Tear', 'assets/Sprites/Usables/medusaTear.png', 1, 25, 48),
-(8, 'Power of the Dead', 'assets/Sprites/Usables/powerOfTheDead.png', 1, 50, 49);
-
-
-INSERT INTO LEVELS (LEVEL_ID, ORDER)
-VALUES
+(6, 'Dragons Blood', 'assets/Sprites/Usables/dragonsBlood.png', 3, 25, 47);
 
 
 INSERT INTO LEVEL (LEVEL_ID, TYPE, SPRITE)
 VALUES
+(1, 'Trader', 'assets/Sprites/Level/trader.png'),
+(2, 'Combat', 'assets/Sprites/Level/combat.png'),
+(3, 'Boss Room', 'assets/Sprites/Level/bossRoom.png');
+
+
+INSERT INTO LEVELS (LEVEL_ID, ORDER)
+VALUES
+(2, 1),
+(2, 2),
+(2, 3),
+(2, 4),
+(1, 5),
+(3, 6);
 
 
 INSERT INTO SET (SET_ID, SET_NAME, EQUIPMENT_ID, WEAPON_ID, ITEM_USABLE_ID, SPRITE, HP, STAMINA, POWER)
 VALUES
+(1, 'Strongman', 10, 8, 1, 'assets/Sprites/Set/Strongman.png', 20, 1, 10),
+(2, 'Tank', 8, 7, 5, 'assets/Sprites/Set/Tank.png', 40, 1, 1),
+(3, 'Hardyman', 5, 1, 4, 'assets/Sprites/Set/Hardyman.png', 20, 10, 1);
 
 
-INSERT INTO BACKGROUND (BACKGROUND_ID, IMAGE, GRADIENT, BACKGROUND, ROOM)
+INSERT INTO BACKGROUND (BACKGROUND_ID, IMAGE, GRADIENT, BACKGROUND_LIGHT, ROOM)
 VALUES
+(1, "./demoImg/levelGenImg/background/sky1.png", "linear-gradient(180deg,rgba(72, 172, 212, 1) 0%, rgba(142, 224, 230, 1) 50%, rgba(193, 242, 247, 1) 100%)", "rgba(72, 172, 212, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(2, "./demoImg/levelGenImg/background/sky2.png", "linear-gradient(180deg,rgba(72, 172, 212, 1) 0%, rgba(230, 142, 167, 1) 50%, rgba(237, 83, 93, 1) 100%)", "rgba(230, 142, 167, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(3, "./demoImg/levelGenImg/background/sky3.png", "linear-gradient(180deg,rgba(28, 61, 89, 1) 0%, rgba(41, 47, 135, 1) 50%, rgba(41, 47, 135, 1) 100%)", "rgba(41, 47, 135, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(4, "./demoImg/levelGenImg/background/sky4.png", "linear-gradient(180deg,rgba(36, 52, 143, 1) 0%, rgba(169, 73, 184, 1) 50%, rgba(255, 173, 206, 1) 100%)", "rgba(169, 73, 184, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(5, "./demoImg/levelGenImg/background/sky5.png", "linear-gradient(180deg,rgba(199, 226, 255, 1) 0%, rgba(67, 151, 230, 1) 50%, rgba(196, 233, 255, 1) 100%)", "rgba(67, 151, 230, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(6, "./demoImg/levelGenImg/background/sky6.png", "linear-gradient(180deg,rgba(235, 193, 110, 1) 0%, rgba(255, 87, 15, 1) 50%, rgba(212, 66, 158, 1) 100%)", "rgba(255, 87, 15, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(7, "./demoImg/levelGenImg/background/sky7.png", "linear-gradient(180deg,rgba(240, 67, 148, 1) 0%, rgba(255, 87, 15, 1) 50%, rgba(242, 146, 78, 1) 100%)", "rgba(255, 87, 15, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(8, "./demoImg/levelGenImg/background/sky8.png", "linear-gradient(180deg,rgba(179, 67, 240, 1) 0%, rgba(130, 28, 199, 1) 50%, rgba(100, 38, 199, 1) 100%)", "rgba(130, 28, 199, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(9, "./demoImg/levelGenImg/background/city1.png", "linear-gradient(180deg,rgba(86, 143, 196, 1) 0%, rgba(212, 217, 108, 1) 50%, rgba(51, 109, 143, 1) 100%)", "rgba(212, 217, 108, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(10, "./demoImg/levelGenImg/background/city2.png", "linear-gradient(180deg,rgba(252, 199, 229, 1) 0%, rgba(230, 55, 180, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(230, 55, 180, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(11, "./demoImg/levelGenImg/background/city3.png", "linear-gradient(180deg,rgba(199, 239, 252, 1) 0%, rgba(37, 187, 217, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(37, 187, 217, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(12, "./demoImg/levelGenImg/background/city4.png", "linear-gradient(180deg,rgba(252, 199, 231, 1) 0%, rgba(217, 37, 109, 1) 70%, rgba(3, 0, 0, 1) 100%)", "rgba(217, 37, 109, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(13, "./demoImg/levelGenImg/background/city5.png", "linear-gradient(180deg,rgba(252, 199, 231, 1) 0%, rgba(217, 37, 109, 1) 70%, rgba(3, 0, 0, 1) 100%)", "rgba(217, 37, 109, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(14, "./demoImg/levelGenImg/background/city6.png", "linear-gradient(180deg,rgba(106, 184, 196, 1) 0%, rgba(29, 130, 145, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(29, 130, 145, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(15, "./demoImg/levelGenImg/background/city7.png", "linear-gradient(180deg,rgba(255, 177, 99, 1) 0%, rgba(255, 158, 54, 1) 50%, rgba(171, 86, 7, 1) 100%)", "rgba(255, 158, 54, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(16, "./demoImg/levelGenImg/background/city8.png", "linear-gradient(180deg,rgba(2, 16, 168, 1) 0%, rgba(255, 77, 54, 1) 30%, rgba(158, 97, 186, 1) 100%)", "rgba(255, 77, 54, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(17, "./demoImg/levelGenImg/background/city9.png", "linear-gradient(180deg,rgba(161, 0, 72, 1) 0%, rgba(214, 17, 17, 1) 30%, rgba(130, 66, 66, 1) 100%)", "rgba(214, 17, 17, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(18, "./demoImg/levelGenImg/background/city10.png", "linear-gradient(180deg,rgba(232, 146, 223, 1) 0%, rgba(227, 104, 155, 1) 50%, rgba(130, 66, 95, 1) 100%)", "rgba(227, 104, 155, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(19, "./demoImg/levelGenImg/background/sky9.png", "linear-gradient(180deg,rgba(255, 0, 0, 1) 0%, rgba(163, 0, 0, 1) 30%, rgba(105, 0, 0, 1) 100%)", "rgba(163, 0, 0, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
+(20, "./demoImg/levelGenImg/background/city11.png", "linear-gradient(180deg,rgba(182, 234, 252, 1) 0%, rgba(175, 83, 189, 1) 50%, rgba(72, 28, 89, 1) 100%)", "rgba(175, 83, 189, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(21, "./demoImg/levelGenImg/background/city12.png", "linear-gradient(180deg,rgba(6, 45, 138, 1) 0%, rgba(189, 74, 207, 1) 50%, rgba(72, 28, 89, 1) 100%)", "rgba(189, 74, 207, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
+(22, "./demoImg/levelGenImg/background/landscape1.png", "linear-gradient(180deg,rgb(190, 153, 119) 0%, rgba(242, 131, 51, 1) 50%, rgba(130, 80, 33, 1) 100%)", "rgba(242, 131, 51, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
+(23, "./demoImg/levelGenImg/background/landscape2.png", "linear-gradient(180deg,rgb(226, 178, 235) 0%, rgba(255, 181, 220, 1) 30%, rgba(217, 197, 143, 1) 100%)", "rgba(255, 181, 220, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
+(24, "./demoImg/levelGenImg/background/landscape3.png", "linear-gradient(180deg,rgba(72, 20, 128, 1) 0%, rgba(237, 126, 152, 1) 30%, rgb(103, 28, 115) 100%)", "rgba(237, 126, 152, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
+(25, "./demoImg/levelGenImg/background/landscape4.png", "linear-gradient(180deg,rgba(125, 188, 209, 1) 0%, rgba(245, 199, 140, 1) 50%, rgb(219, 64, 149) 75%, rgba(50, 28, 115, 1) 100%)", "rgba(245, 199, 140, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
+(26, "./demoImg/levelGenImg/background/landscape5.png", "linear-gradient(180deg,rgba(250, 222, 167, 1) 0%, rgba(240, 164, 110, 1) 50%, rgba(168, 45, 34, 1) 100%)", "rgba(240, 164, 110, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
+(27, "./demoImg/levelGenImg/background/landscape6.png", "linear-gradient(180deg,rgba(255, 116, 56, 0.5) 0%, rgba(212, 62, 42, 1) 50%, rgba(150, 28, 17, 1) 100%)", "rgba(212, 62, 42, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
+(28, "./demoImg/levelGenImg/background/landscape7.png", "linear-gradient(180deg,rgba(163, 83, 49, 1) 0%, rgba(242, 86, 19, 1) 50%, rgb(235, 40, 102) 100%)", "rgb(235, 40, 108)", "./demoImg/levelGenImg/rooms/room3Pixel.png");
 
 
 INSERT INTO ENEMY (ENEMY_ID, NAME, SPRITE, HP, POWER, XP, AWARD, TYPE)
