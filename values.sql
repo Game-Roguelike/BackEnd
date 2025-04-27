@@ -130,41 +130,41 @@ VALUES
 
 INSERT INTO SET (SET_ID, SET_NAME, EQUIPMENT_ID, WEAPON_ID, ITEM_USABLE_ID, SPRITE, HP, STAMINA, POWER)
 VALUES
-(1, 'Strongman', 10, 8, 1, 'assets/Sprites/Set/Strongman.png', 20, 1, 10),
-(2, 'Tank', 8, 7, 5, 'assets/Sprites/Set/Tank.png', 40, 1, 1),
-(3, 'Hardyman', 5, 1, 4, 'assets/Sprites/Set/Hardyman.png', 20, 10, 1);
+(1, 'Strongman', 10, 8, 1, 'assets/Sprites/Set/strongman.png', 20, 1, 10),
+(2, 'Tank', 8, 7, 5, 'assets/Sprites/Set/tank.png', 40, 1, 1),
+(3, 'Hardyman', 5, 1, 4, 'assets/Sprites/Set/hardyman.png', 20, 10, 1);
 
 
 INSERT INTO BACKGROUND (BACKGROUND_ID, IMAGE, GRADIENT, BACKGROUND_LIGHT, ROOM)
 VALUES
-(1, "assets/Sprites/background/sky1.png", "linear-gradient(180deg,rgba(72, 172, 212, 1) 0%, rgba(142, 224, 230, 1) 50%, rgba(193, 242, 247, 1) 100%)", "rgba(72, 172, 212, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(2, "assets/Sprites/background/sky2.png", "linear-gradient(180deg,rgba(72, 172, 212, 1) 0%, rgba(230, 142, 167, 1) 50%, rgba(237, 83, 93, 1) 100%)", "rgba(230, 142, 167, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(3, "assets/Sprites/background/sky3.png", "linear-gradient(180deg,rgba(28, 61, 89, 1) 0%, rgba(41, 47, 135, 1) 50%, rgba(41, 47, 135, 1) 100%)", "rgba(41, 47, 135, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(4, "assets/Sprites/background/sky4.png", "linear-gradient(180deg,rgba(36, 52, 143, 1) 0%, rgba(169, 73, 184, 1) 50%, rgba(255, 173, 206, 1) 100%)", "rgba(169, 73, 184, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(5, "assets/Sprites/background/sky5.png", "linear-gradient(180deg,rgba(199, 226, 255, 1) 0%, rgba(67, 151, 230, 1) 50%, rgba(196, 233, 255, 1) 100%)", "rgba(67, 151, 230, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(6, "assets/Sprites/background/sky6.png", "linear-gradient(180deg,rgba(235, 193, 110, 1) 0%, rgba(255, 87, 15, 1) 50%, rgba(212, 66, 158, 1) 100%)", "rgba(255, 87, 15, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(7, "assets/Sprites/background/sky7.png", "linear-gradient(180deg,rgba(240, 67, 148, 1) 0%, rgba(255, 87, 15, 1) 50%, rgba(242, 146, 78, 1) 100%)", "rgba(255, 87, 15, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(8, "assets/Sprites/background/sky8.png", "linear-gradient(180deg,rgba(179, 67, 240, 1) 0%, rgba(130, 28, 199, 1) 50%, rgba(100, 38, 199, 1) 100%)", "rgba(130, 28, 199, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(9, "assets/Sprites/background/city1.png", "linear-gradient(180deg,rgba(86, 143, 196, 1) 0%, rgba(212, 217, 108, 1) 50%, rgba(51, 109, 143, 1) 100%)", "rgba(212, 217, 108, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(10, "assets/Sprites/background/city2.png", "linear-gradient(180deg,rgba(252, 199, 229, 1) 0%, rgba(230, 55, 180, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(230, 55, 180, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(11, "assets/Sprites/background/city3.png", "linear-gradient(180deg,rgba(199, 239, 252, 1) 0%, rgba(37, 187, 217, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(37, 187, 217, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(12, "assets/Sprites/background/city4.png", "linear-gradient(180deg,rgba(252, 199, 231, 1) 0%, rgba(217, 37, 109, 1) 70%, rgba(3, 0, 0, 1) 100%)", "rgba(217, 37, 109, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(13, "assets/Sprites/background/city5.png", "linear-gradient(180deg,rgba(252, 199, 231, 1) 0%, rgba(217, 37, 109, 1) 70%, rgba(3, 0, 0, 1) 100%)", "rgba(217, 37, 109, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(14, "assets/Sprites/background/city6.png", "linear-gradient(180deg,rgba(106, 184, 196, 1) 0%, rgba(29, 130, 145, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(29, 130, 145, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(15, "assets/Sprites/background/city7.png", "linear-gradient(180deg,rgba(255, 177, 99, 1) 0%, rgba(255, 158, 54, 1) 50%, rgba(171, 86, 7, 1) 100%)", "rgba(255, 158, 54, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(16, "assets/Sprites/background/city8.png", "linear-gradient(180deg,rgba(2, 16, 168, 1) 0%, rgba(255, 77, 54, 1) 30%, rgba(158, 97, 186, 1) 100%)", "rgba(255, 77, 54, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(17, "assets/Sprites/background/city9.png", "linear-gradient(180deg,rgba(161, 0, 72, 1) 0%, rgba(214, 17, 17, 1) 30%, rgba(130, 66, 66, 1) 100%)", "rgba(214, 17, 17, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(18, "assets/Sprites/background/city10.png", "linear-gradient(180deg,rgba(232, 146, 223, 1) 0%, rgba(227, 104, 155, 1) 50%, rgba(130, 66, 95, 1) 100%)", "rgba(227, 104, 155, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(19, "assets/Sprites/background/sky9.png", "linear-gradient(180deg,rgba(255, 0, 0, 1) 0%, rgba(163, 0, 0, 1) 30%, rgba(105, 0, 0, 1) 100%)", "rgba(163, 0, 0, 1)", "./demoImg/levelGenImg/rooms/room1Pixel.png"),
-(20, "assets/Sprites/background/city11.png", "linear-gradient(180deg,rgba(182, 234, 252, 1) 0%, rgba(175, 83, 189, 1) 50%, rgba(72, 28, 89, 1) 100%)", "rgba(175, 83, 189, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(21, "assets/Sprites/background/city12.png", "linear-gradient(180deg,rgba(6, 45, 138, 1) 0%, rgba(189, 74, 207, 1) 50%, rgba(72, 28, 89, 1) 100%)", "rgba(189, 74, 207, 1)", "./demoImg/levelGenImg/rooms/room2Pixel.png"),
-(22, "assets/Sprites/background/landscape1.png", "linear-gradient(180deg,rgb(190, 153, 119) 0%, rgba(242, 131, 51, 1) 50%, rgba(130, 80, 33, 1) 100%)", "rgba(242, 131, 51, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
-(23, "assets/Sprites/background/landscape2.png", "linear-gradient(180deg,rgb(226, 178, 235) 0%, rgba(255, 181, 220, 1) 30%, rgba(217, 197, 143, 1) 100%)", "rgba(255, 181, 220, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
-(24, "assets/Sprites/background/landscape3.png", "linear-gradient(180deg,rgba(72, 20, 128, 1) 0%, rgba(237, 126, 152, 1) 30%, rgb(103, 28, 115) 100%)", "rgba(237, 126, 152, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
-(25, "assets/Sprites/background/landscape4.png", "linear-gradient(180deg,rgba(125, 188, 209, 1) 0%, rgba(245, 199, 140, 1) 50%, rgb(219, 64, 149) 75%, rgba(50, 28, 115, 1) 100%)", "rgba(245, 199, 140, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
-(26, "assets/Sprites/background/landscape5.png", "linear-gradient(180deg,rgba(250, 222, 167, 1) 0%, rgba(240, 164, 110, 1) 50%, rgba(168, 45, 34, 1) 100%)", "rgba(240, 164, 110, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
-(27, "assets/Sprites/background/landscape6.png", "linear-gradient(180deg,rgba(255, 116, 56, 0.5) 0%, rgba(212, 62, 42, 1) 50%, rgba(150, 28, 17, 1) 100%)", "rgba(212, 62, 42, 1)", "./demoImg/levelGenImg/rooms/room3Pixel.png"),
-(28, "assets/Sprites/background/landscape7.png", "linear-gradient(180deg,rgba(163, 83, 49, 1) 0%, rgba(242, 86, 19, 1) 50%, rgb(235, 40, 102) 100%)", "rgb(235, 40, 108)", "./demoImg/levelGenImg/rooms/room3Pixel.png");
+(1, "assets/Sprites/Background/sky1.png", "linear-gradient(180deg,rgba(72, 172, 212, 1) 0%, rgba(142, 224, 230, 1) 50%, rgba(193, 242, 247, 1) 100%)", "rgba(72, 172, 212, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(2, "assets/Sprites/Background/sky2.png", "linear-gradient(180deg,rgba(72, 172, 212, 1) 0%, rgba(230, 142, 167, 1) 50%, rgba(237, 83, 93, 1) 100%)", "rgba(230, 142, 167, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(3, "assets/Sprites/Background/sky3.png", "linear-gradient(180deg,rgba(28, 61, 89, 1) 0%, rgba(41, 47, 135, 1) 50%, rgba(41, 47, 135, 1) 100%)", "rgba(41, 47, 135, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(4, "assets/Sprites/Background/sky4.png", "linear-gradient(180deg,rgba(36, 52, 143, 1) 0%, rgba(169, 73, 184, 1) 50%, rgba(255, 173, 206, 1) 100%)", "rgba(169, 73, 184, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(5, "assets/Sprites/Background/sky5.png", "linear-gradient(180deg,rgba(199, 226, 255, 1) 0%, rgba(67, 151, 230, 1) 50%, rgba(196, 233, 255, 1) 100%)", "rgba(67, 151, 230, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(6, "assets/Sprites/Background/sky6.png", "linear-gradient(180deg,rgba(235, 193, 110, 1) 0%, rgba(255, 87, 15, 1) 50%, rgba(212, 66, 158, 1) 100%)", "rgba(255, 87, 15, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(7, "assets/Sprites/Background/sky7.png", "linear-gradient(180deg,rgba(240, 67, 148, 1) 0%, rgba(255, 87, 15, 1) 50%, rgba(242, 146, 78, 1) 100%)", "rgba(255, 87, 15, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(8, "assets/Sprites/Background/sky8.png", "linear-gradient(180deg,rgba(179, 67, 240, 1) 0%, rgba(130, 28, 199, 1) 50%, rgba(100, 38, 199, 1) 100%)", "rgba(130, 28, 199, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(9, "assets/Sprites/Background/city1.png", "linear-gradient(180deg,rgba(86, 143, 196, 1) 0%, rgba(212, 217, 108, 1) 50%, rgba(51, 109, 143, 1) 100%)", "rgba(212, 217, 108, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(10, "assets/Sprites/Background/city2.png", "linear-gradient(180deg,rgba(252, 199, 229, 1) 0%, rgba(230, 55, 180, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(230, 55, 180, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(11, "assets/Sprites/Background/city3.png", "linear-gradient(180deg,rgba(199, 239, 252, 1) 0%, rgba(37, 187, 217, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(37, 187, 217, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(12, "assets/Sprites/Background/city4.png", "linear-gradient(180deg,rgba(252, 199, 231, 1) 0%, rgba(217, 37, 109, 1) 70%, rgba(3, 0, 0, 1) 100%)", "rgba(217, 37, 109, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(13, "assets/Sprites/Background/city5.png", "linear-gradient(180deg,rgba(252, 199, 231, 1) 0%, rgba(217, 37, 109, 1) 70%, rgba(3, 0, 0, 1) 100%)", "rgba(217, 37, 109, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(14, "assets/Sprites/Background/city6.png", "linear-gradient(180deg,rgba(106, 184, 196, 1) 0%, rgba(29, 130, 145, 1) 50%, rgba(3, 0, 0, 1) 100%)", "rgba(29, 130, 145, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(15, "assets/Sprites/Background/city7.png", "linear-gradient(180deg,rgba(255, 177, 99, 1) 0%, rgba(255, 158, 54, 1) 50%, rgba(171, 86, 7, 1) 100%)", "rgba(255, 158, 54, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(16, "assets/Sprites/Background/city8.png", "linear-gradient(180deg,rgba(2, 16, 168, 1) 0%, rgba(255, 77, 54, 1) 30%, rgba(158, 97, 186, 1) 100%)", "rgba(255, 77, 54, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(17, "assets/Sprites/Background/city9.png", "linear-gradient(180deg,rgba(161, 0, 72, 1) 0%, rgba(214, 17, 17, 1) 30%, rgba(130, 66, 66, 1) 100%)", "rgba(214, 17, 17, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(18, "assets/Sprites/Background/city10.png", "linear-gradient(180deg,rgba(232, 146, 223, 1) 0%, rgba(227, 104, 155, 1) 50%, rgba(130, 66, 95, 1) 100%)", "rgba(227, 104, 155, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(19, "assets/Sprites/Background/sky9.png", "linear-gradient(180deg,rgba(255, 0, 0, 1) 0%, rgba(163, 0, 0, 1) 30%, rgba(105, 0, 0, 1) 100%)", "rgba(163, 0, 0, 1)", "assets/Sprites/Rooms/room1Pixel.png"),
+(20, "assets/Sprites/Background/city11.png", "linear-gradient(180deg,rgba(182, 234, 252, 1) 0%, rgba(175, 83, 189, 1) 50%, rgba(72, 28, 89, 1) 100%)", "rgba(175, 83, 189, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(21, "assets/Sprites/Background/city12.png", "linear-gradient(180deg,rgba(6, 45, 138, 1) 0%, rgba(189, 74, 207, 1) 50%, rgba(72, 28, 89, 1) 100%)", "rgba(189, 74, 207, 1)", "assets/Sprites/Rooms/room2Pixel.png"),
+(22, "assets/Sprites/Background/landscape1.png", "linear-gradient(180deg,rgb(190, 153, 119) 0%, rgba(242, 131, 51, 1) 50%, rgba(130, 80, 33, 1) 100%)", "rgba(242, 131, 51, 1)", "assets/Sprites/Rooms/room3Pixel.png"),
+(23, "assets/Sprites/Background/landscape2.png", "linear-gradient(180deg,rgb(226, 178, 235) 0%, rgba(255, 181, 220, 1) 30%, rgba(217, 197, 143, 1) 100%)", "rgba(255, 181, 220, 1)", "assets/Sprites/Rooms/room3Pixel.png"),
+(24, "assets/Sprites/Background/landscape3.png", "linear-gradient(180deg,rgba(72, 20, 128, 1) 0%, rgba(237, 126, 152, 1) 30%, rgb(103, 28, 115) 100%)", "rgba(237, 126, 152, 1)", "assets/Sprites/Rooms/room3Pixel.png"),
+(25, "assets/Sprites/Background/landscape4.png", "linear-gradient(180deg,rgba(125, 188, 209, 1) 0%, rgba(245, 199, 140, 1) 50%, rgb(219, 64, 149) 75%, rgba(50, 28, 115, 1) 100%)", "rgba(245, 199, 140, 1)", "assets/Sprites/Rooms/room3Pixel.png"),
+(26, "assets/Sprites/Background/landscape5.png", "linear-gradient(180deg,rgba(250, 222, 167, 1) 0%, rgba(240, 164, 110, 1) 50%, rgba(168, 45, 34, 1) 100%)", "rgba(240, 164, 110, 1)", "assets/Sprites/Rooms/room3Pixel.png"),
+(27, "assets/Sprites/Background/landscape6.png", "linear-gradient(180deg,rgba(255, 116, 56, 0.5) 0%, rgba(212, 62, 42, 1) 50%, rgba(150, 28, 17, 1) 100%)", "rgba(212, 62, 42, 1)", "assets/Sprites/Rooms/room3Pixel.png"),
+(28, "assets/Sprites/Background/landscape7.png", "linear-gradient(180deg,rgba(163, 83, 49, 1) 0%, rgba(242, 86, 19, 1) 50%, rgb(235, 40, 102) 100%)", "rgb(235, 40, 108)", "assets/Sprites/Rooms/room3Pixel.png");
 
 
 INSERT INTO ENEMY (ENEMY_ID, NAME, SPRITE, HP, POWER, XP, AWARD, TYPE)
