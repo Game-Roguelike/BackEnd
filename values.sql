@@ -96,9 +96,9 @@ VALUES
 (4, 'Bolo Knife', 'assets/Sprites/Weapon/boloKnife.png', 'Weapon', 6, 20, 36),
 (5, 'Long Sword', 'assets/Sprites/Weapon/longSword.png', 'Weapon', 8, 45, 37),
 (6, 'Special Bow', 'assets/Sprites/Weapon/specialBow.png', 'Weapon', 8, 40, 38),
-(7, 'Bow', 'assets/Sprites/Weapon/Bow.png', 'Weapon', 5, 15, 39),
-(8, 'Flail', 'assets/Sprites/Weapon/Flail.png', 'Weapon', 6, 20, 40),
-(9, 'Hammer', 'assets/Sprites/Weapon/Hammer.png', 'Weapon', 7, 30, 41);
+(7, 'Bow', 'assets/Sprites/Weapon/bow.png', 'Weapon', 5, 15, 39),
+(8, 'Flail', 'assets/Sprites/Weapon/flail.png', 'Weapon', 6, 20, 40),
+(9, 'Hammer', 'assets/Sprites/Weapon/hammer.png', 'Weapon', 7, 30, 41);
 
 
 INSERT INTO ITEM_USABLE (ITEM_ID, NAME, SPRITE, NUMBER_OF_UNITS, PRICE, EFFECT_ID)
@@ -174,7 +174,7 @@ VALUES
 (3, 'Giant Slime', 'assets/Sprites/Enemies/giantSlime.png', 50, 2, 11, 12, 'Boss'),
 (4, 'Dead Knight', 'assets/Sprites/Enemies/deadKnight.png', 40, 10, 20, 25, 'Boss');
 (5, 'Orc', 'assets/Sprites/Enemies/orc.png', 30, 5, 9, 12, 'Enemy'),
-(6, 'Dead Archer', 'assets/Sprites/Enemies/darkMage.png', 10, 2, 4, 6, 'Enemy');
+(6, 'Dead Archer', 'assets/Sprites/Enemies/deadArcher.png', 10, 2, 4, 6, 'Enemy');
 (7, 'Poltergeist', 'assets/Sprites/Enemies/poltergeist.png', 25, 5, 8, 11, 'Enemy'),
 (8, 'Generall Goblin', 'assets/Sprites/Enemies/generallGoblin.png', 20, 10, 15, 20, 'Boss');
 (9, 'Guardian Spirit', 'assets/Sprites/Enemies/guardianSpirit.png', 60, 15, 27, 38, 'Boss'),
