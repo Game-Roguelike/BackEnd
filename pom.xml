@@ -12,20 +12,6 @@
     <artifactId>webGame</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>webGame</name>
-    <description>webGame</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -57,7 +43,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -66,5 +51,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

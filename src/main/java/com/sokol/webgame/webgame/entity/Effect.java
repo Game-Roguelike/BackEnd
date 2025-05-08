@@ -13,12 +13,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "effect")
 public class Effect {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "effect_id")
     private Long effectId;
-
     private String name;
     private String type;
     private Integer hp;

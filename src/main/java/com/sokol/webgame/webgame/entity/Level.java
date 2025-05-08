@@ -13,13 +13,9 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "level")
 public class Level {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long level_id;
-
     private String type;
     private String sprite;
-
-
 }

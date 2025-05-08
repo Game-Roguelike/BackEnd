@@ -13,14 +13,12 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "levels")
 public class Levels {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "levels_id")
     private Long levelsId;
     @Column(name = "level_order")
     private Integer levelOrder;
-
     @OneToOne
     @JoinColumn(name = "level_id")
     private Level level;

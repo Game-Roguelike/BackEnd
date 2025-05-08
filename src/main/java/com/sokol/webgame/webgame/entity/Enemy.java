@@ -13,12 +13,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "enemy")
 public class Enemy {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "enemy_id")
     private Long enemyId;
-
     private String name;
     private String sprite;
     private Integer hp;
@@ -26,5 +24,4 @@ public class Enemy {
     private Integer xp;
     private Integer award;
     private String type;
-
 }
