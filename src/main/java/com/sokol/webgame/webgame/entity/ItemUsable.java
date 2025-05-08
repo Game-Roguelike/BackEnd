@@ -16,7 +16,7 @@ public class ItemUsable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "item_id")
-    private Long itemID;
+    private Long itemId;
     private String name;
     private String sprite;
     @Column(name = "number_of_units")
