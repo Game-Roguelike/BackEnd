@@ -6,22 +6,21 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.util.List;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("game")
+@RequestMapping("/game")
 public class GameController {
     private final GameService gameService;
 
-    @GetMapping("sets")
+    @GetMapping("/sets")
     public List<Set> findAllSets() {
         return gameService.findAllSets();
     }
 
-    @GetMapping(value = "img", produces = {MediaType.IMAGE_PNG_VALUE})
-    public @ResponseBody byte[] getImages(@RequestParam String path) throws IOException {
+    @GetMapping(value = "/image", produces = {MediaType.IMAGE_PNG_VALUE})
+    public @ResponseBody byte[] getImages(@RequestParam String path) {
         return gameService.getImages(path);
     }
 }
