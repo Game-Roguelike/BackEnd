@@ -20,7 +20,7 @@ public class GameService {
     }
 
     @SneakyThrows
-    public byte[] getImages(String path) {
+    public byte[] getImage(String path) {
         return new ClassPathResource(path)
                 .getInputStream()
                 .readAllBytes();

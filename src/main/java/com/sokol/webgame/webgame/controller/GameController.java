@@ -21,6 +21,6 @@ public class GameController {
 
     @GetMapping(value = "/image", produces = {MediaType.IMAGE_PNG_VALUE})
     public @ResponseBody byte[] getImages(@RequestParam String path) {
-        return gameService.getImages(path);
+        return gameService.getImage(path);
     }
 }
