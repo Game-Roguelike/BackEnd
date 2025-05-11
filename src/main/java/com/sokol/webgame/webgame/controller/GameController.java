@@ -1,5 +1,6 @@
 package com.sokol.webgame.webgame.controller;
 
+import com.sokol.webgame.webgame.dto.LevelsDto;
 import com.sokol.webgame.webgame.entity.Set;
 import com.sokol.webgame.webgame.service.GameService;
 import lombok.AllArgsConstructor;
@@ -22,5 +23,10 @@ public class GameController {
     @GetMapping(value = "/image", produces = {MediaType.IMAGE_PNG_VALUE})
     public @ResponseBody byte[] getImages(@RequestParam String path) {
         return gameService.getImage(path);
+    }
+
+    @GetMapping("/levels")
+    public List<LevelsDto> getLevels() {
+        return gameService.getLevels();
     }
 }
