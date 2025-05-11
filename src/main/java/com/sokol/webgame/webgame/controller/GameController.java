@@ -27,6 +27,6 @@ public class GameController {
 
     @GetMapping("/levels")
     public List<LevelsDto> getLevels() {
-        return gameService.getLevel();
+        return gameService.getLevels();
     }
 }

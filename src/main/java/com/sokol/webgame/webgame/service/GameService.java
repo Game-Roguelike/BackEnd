@@ -4,7 +4,6 @@ import com.sokol.webgame.webgame.Repository.LevelsRepo;
 import com.sokol.webgame.webgame.Repository.SetRepo;
 import com.sokol.webgame.webgame.dto.LevelsDto;
 import com.sokol.webgame.webgame.dto.mapping.LevelsMapping;
-import com.sokol.webgame.webgame.entity.Levels;
 import com.sokol.webgame.webgame.entity.Set;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
@@ -33,16 +32,9 @@ public class GameService {
                 .readAllBytes();
     }
 
-    public List<LevelsDto> getLevel() {
+    public List<LevelsDto> getLevels() {
         return levelsRepo.findAll().stream()
-                .map(this::convertToDto)
+                .map(levelsMapping::map)
                 .toList();
-    }
-
-    private LevelsDto convertToDto(Levels levels) {
-        LevelsDto dto = new LevelsDto();
-        dto.setLevelOrder(levels.getLevelOrder());
-
-        return dto;
     }
 }
