@@ -1,6 +1,8 @@
 package com.sokol.webgame.webgame.controller;
 
+import com.sokol.webgame.webgame.dto.EnemyBackgroundDto;
 import com.sokol.webgame.webgame.dto.LevelsDto;
+import com.sokol.webgame.webgame.entity.Enemy;
 import com.sokol.webgame.webgame.entity.Set;
 import com.sokol.webgame.webgame.service.GameService;
 import lombok.AllArgsConstructor;
@@ -28,5 +30,10 @@ public class GameController {
     @GetMapping("/levels")
     public List<LevelsDto> getLevels() {
         return gameService.getLevels();
+    }
+
+    @GetMapping("/level")
+    public EnemyBackgroundDto getLevel(@RequestParam Enemy type){
+        return gameService.getLevel(type);
     }
 }
