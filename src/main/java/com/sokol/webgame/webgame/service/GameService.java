@@ -4,7 +4,7 @@ import com.sokol.webgame.webgame.Repository.BackgroundRepo;
 import com.sokol.webgame.webgame.Repository.EnemyRepo;
 import com.sokol.webgame.webgame.Repository.LevelsRepo;
 import com.sokol.webgame.webgame.Repository.SetRepo;
-import com.sokol.webgame.webgame.dto.EnemyBackgroundDto;
+import com.sokol.webgame.webgame.dto.GameLevelDto;
 import com.sokol.webgame.webgame.dto.LevelsDto;
 import com.sokol.webgame.webgame.dto.mapping.BackgroundMapping;
 import com.sokol.webgame.webgame.dto.mapping.EnemyMapping;
@@ -13,6 +13,7 @@ import com.sokol.webgame.webgame.entity.Background;
 import com.sokol.webgame.webgame.entity.Enemy;
 import com.sokol.webgame.webgame.entity.Set;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.SneakyThrows;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -20,8 +21,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @AllArgsConstructor
+@Builder
 @Service
-
 public class GameService {
     private final SetRepo setRepo;
     private final LevelsRepo levelsRepo;
@@ -49,21 +50,18 @@ public class GameService {
                 .toList();
     }
 
-    public EnemyBackgroundDto getLevel(Enemy type) {
-        Background randomBackground = backgroundRepo.findRandomBack(); // Рандомний фон
-        Enemy randomEnemy;
+    public GameLevelDto getLevel(EnemyType type) {
+        Background randomBackground = backgroundRepo.findRandomBack();
+        Enemy randomEnemy = null;
 
-        if (type.getType().equalsIgnoreCase("Enemy")) {
-            randomEnemy = enemyRepo.findRandomEnemy(); // Рандомний ворог
-        } else {
-            randomEnemy = enemyRepo.findRandomBoss();  // Рандомний бос
+        switch (type) {
+            case NORMAL -> randomEnemy = enemyRepo.findRandomEnemy();
+            case BOSS -> randomEnemy = enemyRepo.findRandomBoss();
         }
 
-        EnemyBackgroundDto result = new EnemyBackgroundDto();
-
-        result.setBackgrounds(backgroundMapping.map(randomBackground));
-        result.setEnemies(enemyMapping.map(randomEnemy));
-
-        return result;
+        return GameLevelDto.builder()
+                .background(backgroundMapping.map(randomBackground))
+                .enemy(enemyMapping.map(randomEnemy))
+                .build();
     }
 }

@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 public interface BackgroundRepo extends JpaRepository<Background, Integer> {
-    @Query(value = "SELECT * FROM background ORDER BY RAND() LIMIT 1", nativeQuery = true)
+    @Query(value = "SELECT * FROM background ORDER BY RANDOM() LIMIT 1", nativeQuery = true)
     Background findRandomBack();
 }
