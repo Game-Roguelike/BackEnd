@@ -1,7 +1,9 @@
 package com.sokol.webgame.webgame.controller;
 
+import com.sokol.webgame.webgame.dto.GameLevelDto;
 import com.sokol.webgame.webgame.dto.LevelsDto;
 import com.sokol.webgame.webgame.entity.Set;
+import com.sokol.webgame.webgame.service.EnemyType;
 import com.sokol.webgame.webgame.service.GameService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
@@ -28,5 +30,10 @@ public class GameController {
     @GetMapping("/levels")
     public List<LevelsDto> getLevels() {
         return gameService.getLevels();
+    }
+
+    @GetMapping("/level/generate")
+    public GameLevelDto getLevel(@RequestParam EnemyType type) {
+        return gameService.getLevel(type);
     }
 }
