@@ -13,7 +13,6 @@ import com.sokol.webgame.webgame.entity.Background;
 import com.sokol.webgame.webgame.entity.Enemy;
 import com.sokol.webgame.webgame.entity.Set;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.SneakyThrows;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -21,7 +20,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @AllArgsConstructor
-@Builder
 @Service
 public class GameService {
     private final SetRepo setRepo;
