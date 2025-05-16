@@ -15,7 +15,8 @@ import lombok.NoArgsConstructor;
 public class Level {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long level_id;
+    @Column(name = "level_id")
+    private Long levelId;
     private String type;
     private String sprite;
 }

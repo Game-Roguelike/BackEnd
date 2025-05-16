@@ -1,0 +1,132 @@
+DROP TABLE IF EXISTS EFFECT;
+CREATE TABLE EFFECT
+(
+    EFFECT_ID       serial       NOT NULL,
+    NAME            varchar(100) NOT NULL,
+    TYPE            varchar(50)  NOT NULL,
+    HP              int  DEFAULT NULL,
+    POWER           int  DEFAULT NULL,
+    STAMINA         int  DEFAULT NULL,
+    DAMAGE          real DEFAULT NULL,
+    INCOMING_DAMAGE real DEFAULT NULL,
+
+    PRIMARY KEY (EFFECT_ID)
+);
+
+DROP TABLE IF EXISTS WEAPON;
+CREATE TABLE WEAPON
+(
+    WEAPON_ID serial       NOT NULL,
+    NAME      varchar(100) NOT NULL,
+    SPRITE    varchar(255) NOT NULL,
+    TYPE      varchar(50)  NOT NULL,
+    DAMAGE    int          NOT NULL,
+    PRICE     int          NOT NULL,
+    EFFECT_ID int          NOT NULL,
+
+    PRIMARY KEY (WEAPON_ID),
+    CONSTRAINT WEAPON_IBFK_1 FOREIGN KEY (EFFECT_ID) REFERENCES EFFECT (EFFECT_ID)
+);
+
+DROP TABLE IF EXISTS EQUIPMENT;
+CREATE TABLE EQUIPMENT
+(
+    EQUIPMENT_ID serial       NOT NULL,
+    NAME         varchar(100) NOT NULL,
+    SPRITE       varchar(255) NOT NULL,
+    TYPE         varchar(50)  NOT NULL,
+    EFFECT_ID    int          NOT NULL,
+    PRICE        int          NOT NULL,
+
+    PRIMARY KEY (EQUIPMENT_ID),
+    CONSTRAINT EQUIPMENT_IBFK_1 FOREIGN KEY (EFFECT_ID) REFERENCES EFFECT (EFFECT_ID)
+);
+
+DROP TABLE IF EXISTS ITEM_USABLE;
+CREATE TABLE ITEM_USABLE
+(
+    ITEM_ID         serial       NOT NULL,
+    NAME            varchar(100) NOT NULL,
+    SPRITE          varchar(255) NOT NULL,
+    NUMBER_OF_UNITS int          NOT NULL,
+    PRICE           int          NOT NULL,
+    EFFECT_ID       int          NOT NULL,
+
+    PRIMARY KEY (ITEM_ID),
+    CONSTRAINT ITEM_USABLE_IBFK_1 FOREIGN KEY (EFFECT_ID) REFERENCES EFFECT (EFFECT_ID)
+);
+
+DROP TABLE IF EXISTS LEVEL;
+CREATE TABLE LEVEL
+(
+    LEVEL_ID serial       NOT NULL,
+    TYPE     varchar(50)  NOT NULL,
+    SPRITE   varchar(255) NOT NULL,
+
+    PRIMARY KEY (LEVEL_ID)
+);
+
+DROP TABLE IF EXISTS LEVELS;
+CREATE TABLE LEVELS
+(
+    LEVELS_ID   serial PRIMARY KEY,
+    LEVEL_ID    int NOT NULL,
+    LEVEL_ORDER int NOT NULL,
+
+    CONSTRAINT LEVELS_IBFK_1 FOREIGN KEY (LEVEL_ID) REFERENCES LEVEL (LEVEL_ID)
+);
+
+DROP TABLE IF EXISTS SET;
+CREATE TABLE SET
+(
+    SET_ID         serial       NOT NULL,
+    SET_NAME       varchar(100) NOT NULL,
+    EQUIPMENT_ID   int          NOT NULL,
+    WEAPON_ID      int          NOT NULL,
+    ITEM_USABLE_ID int          NOT NULL,
+    SPRITE         varchar(255) NOT NULL,
+    HP             int          NOT NULL,
+    STAMINA        int          NOT NULL,
+    POWER          int          NOT NULL,
+
+    PRIMARY KEY (SET_ID),
+    CONSTRAINT SET_IBFK_1 FOREIGN KEY (EQUIPMENT_ID) REFERENCES EQUIPMENT (EQUIPMENT_ID),
+    CONSTRAINT SET_IBFK_2 FOREIGN KEY (WEAPON_ID) REFERENCES WEAPON (WEAPON_ID),
+    CONSTRAINT SET_IBFK_3 FOREIGN KEY (ITEM_USABLE_ID) REFERENCES ITEM_USABLE (ITEM_ID)
+);
+
+DROP TABLE IF EXISTS BACKGROUND;
+CREATE TABLE BACKGROUND
+(
+    BACKGROUND_ID    serial       NOT NULL,
+    IMAGE            varchar(255) NOT NULL,
+    GRADIENT         varchar(255) NOT NULL,
+    BACKGROUND_LIGHT varchar(255) NOT NULL,
+    ROOM             varchar(255) NOT NULL
+);
+
+DROP TABLE IF EXISTS ENEMY;
+CREATE TABLE ENEMY
+(
+    ENEMY_ID serial       NOT NULL,
+    NAME     varchar(100) NOT NULL,
+    SPRITE   varchar(255) NOT NULL,
+    HP       int          NOT NULL,
+    POWER    int          NOT NULL,
+    XP       int          NOT NULL,
+    AWARD    int          NOT NULL,
+    TYPE     varchar(50)  NOT NULL,
+
+    PRIMARY KEY (ENEMY_ID)
+);
+
+DROP TABLE IF EXISTS EXPOINT;
+CREATE TABLE EXPOINT
+(
+    UNIQUEID serial NOT NULL,
+    LEVEL    int    NOT NULL,
+    MIN_XP   int    NOT NULL,
+    MAX_XP   int    NOT NULL,
+
+    PRIMARY KEY (UNIQUEID)
+);

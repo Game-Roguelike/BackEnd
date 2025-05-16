@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class Expoint {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer uniqueId;
+    private Long uniqueId;
     private Integer level;
     @Column(name = "min_xp")
     private Integer minXP;
