@@ -22,7 +22,7 @@ public class Effect {
     private Integer hp;
     private Integer power;
     private Integer stamina;
-    private Integer damage;
+    private Float damage;
     @Column(name = "incoming_damage")
-    private Integer incomingDamage;
+    private Float incomingDamage;
 }
